@@ -1,11 +1,16 @@
 class Solution(object):
     def wallsAndGates(self, rooms):
         queue = []
+
+        # iterate through whole grid to find where all gates are
         for i in range(len(rooms)):
             for j in range(len(rooms[0])):
                 if rooms[i][j] == 0:
+
+                    # add each gate to the queue
                     queue.append((i,j))
 
+        # bfs
         count = 0
         while queue:
             count += 1
