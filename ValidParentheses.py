@@ -4,6 +4,7 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
+        # keeps track of the opening parens
         stack = []
 
         for paren in s:
