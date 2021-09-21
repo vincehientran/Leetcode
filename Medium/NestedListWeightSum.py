@@ -7,7 +7,7 @@ class Solution(object):
                 weightedSum += item * depth
             else:
                 weightedSum += self.depthSum(item, depth=depth+1)
-                
+
         return weightedSum
 
 sol = Solution()
