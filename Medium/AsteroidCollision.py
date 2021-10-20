@@ -13,13 +13,16 @@ class Solution(object):
                 stop = False
                 while stack and stack[-1] > 0:
                     if stack[-1] == -asteroid:
+                        # cancel both asteroids
                         stop = True
                         stack.pop()
                         break
                     elif stack[-1] > -asteroid:
+                        # cancel the negative asteroid
                         stop = True
                         break
                     else:
+                        # cancel the positive asteroid
                         stack.pop()
                         continue
                         
