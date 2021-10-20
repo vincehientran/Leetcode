@@ -27,6 +27,7 @@ class Solution(object):
                         continue
                         
                 if not stop:
+                    # add the negative asteroid if it was not cancelled yet
                     stack.append(asteroid)
                     
                     
